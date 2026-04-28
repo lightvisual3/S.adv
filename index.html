@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirin Sultana | Advocate — Narayanganj Bar</title>
+    <meta name="description" content="Advocate Shirin Sultana — Freshly called to the Bar in 2026. Integrity, dedication, and a commitment to justice. Based in Narayanganj, Bangladesh.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #faf8f5;
+            --bg-alt: #f3efe9;
+            --surface: #ffffff;
+            --surface-alt: #f9f7f3;
+            --text: #1a1a1f;
+            --text-secondary: #5a5a65;
+            --text-muted: #8a8a92;
+            --gold: #b8862d;
+            --gold-light: #d4a84b;
+            --gold-pale: #faf3e4;
+            --gold-dark: #8b5e1e;
+            --navy: #141a25;
+            --navy-light: #1e2738;
+            --border: #e5e0d8;
+            --border-light: #f0ebe2;
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.10);
+            --shadow-xl: 0 32px 80px rgba(0, 0, 0, 0.13);
+            --radius-xs: 6px;
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --radius-full: 999px;
+            --transition-fast: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+            --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            --nav-height: 76px;
+        }
+
+        [data-theme="dark"] {
+            --bg: #0e1117;
+            --bg-alt: #131721;
+            --surface: #181c26;
+            --surface-alt: #1c202b;
+            --text: #e8e6e1;
+            --text-secondary: #b0aea8;
+            --text-muted: #7a7872;
+            --gold: #d4a84b;
+            --gold-light: #e0bc6e;
+            --gold-pale: #2a2418;
+            --gold-dark: #c8963e;
+            --navy: #0a0d14;
+            --navy-light: #121620;
+            --border: #2a2d35;
+            --border-light: #22252d;
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.55);
+            --shadow-xl: 0 32px 80px rgba(0, 0, 0, 0.6);
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--nav-height);
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            transition: background-color var(--transition), color var(--transition);
+            overflow-x: hidden;
+            cursor: default;
+        }
+        ::selection {
+            background: var(--gold);
+            color: #fff;
+        }
+
+        /* ============ PRELOADER ============ */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 99999;
+            background: var(--bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+            pointer-events: all;
+        }
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .preloader-content {
+            text-align: center;
+        }
+        .preloader-scales {
+            font-size: 4rem;
+            animation: preloaderPulse 1.4s ease-in-out infinite;
+            display: block;
+            margin-bottom: 16px;
+        }
+        @keyframes preloaderPulse {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.15);
+                opacity: 1;
+            }
+        }
+        .preloader-name {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--gold);
+            animation: preloaderFade 1.4s ease-in-out infinite;
+        }
+        @keyframes preloaderFade {
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        .preloader-line {
+            width: 60px;
+            height: 2px;
+            background: var(--gold);
+            margin: 12px auto 0;
+            border-radius: 2px;
+            animation: preloaderLine 1.4s ease-in-out infinite;
+        }
+        @keyframes preloaderLine {
+            0%,
+            100% {
+                width: 40px;
+                opacity: 0.4;
+            }
+            50% {
+                width: 80px;
+                opacity: 1;
+            }
+        }
+
+        /* ============ NAVIGATION ============ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(250, 248, 245, 0.82);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: all var(--transition);
+            height: var(--nav-height);
+        }
+        [data-theme="dark"] .navbar {
+            background: rgba(14, 17, 23, 0.85);
+        }
+        .navbar.scrolled {
+            border-bottom-color: var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 36px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .nav-brand {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: var(--text);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-brand-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--gold);
+            display: inline-block;
+            animation: dotGlow 2.5s ease-in-out infinite;
+        }
+        @keyframes dotGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(184, 134, 45, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 0 14px rgba(184, 134, 45, 0);
+            }
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 4px;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            padding: 9px 18px;
+            border-radius: var(--radius-full);
+            font-size: 0.88rem;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            transition: all var(--transition-fast);
+            font-family: var(--font-body);
+            position: relative;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--gold-dark);
+            background: var(--gold-pale);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .icon-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+            color: var(--text);
+            font-family: var(--font-body);
+        }
+        .icon-btn:hover {
+            border-color: var(--gold);
+            background: var(--gold-pale);
+            color: var(--gold-dark);
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 6px;
+            z-index: 1001;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: all var(--transition-fast);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============ SECTIONS ============ */
+        .section {
+            padding: 100px 36px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-family: var(--font-body);
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+            line-height: 1.15;
+            color: var(--text);
+        }
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 520px;
+            line-height: 1.6;
+        }
+        .gold-line {
+            width: 50px;
+            height: 2.5px;
+            background: var(--gold);
+            border-radius: 2px;
+            margin-top: 16px;
+        }
+        .section-header {
+            margin-bottom: 56px;
+        }
+        .section-header.centered {
+            text-align: center;
+        }
+        .section-header.centered .section-subtitle {
+            margin: 0 auto;
+        }
+        .section-header.centered .gold-line {
+            margin: 16px auto 0;
+        }
+
+        /* ============ HERO ============ */
+        .hero-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: var(--nav-height);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.12;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .hero-bg-orb.orb-1 {
+            width: 500px;
+            height: 500px;
+            background: var(--gold);
+            top: -100px;
+            right: -150px;
+            animation: orbFloat 8s ease-in-out infinite;
+        }
+        .hero-bg-orb.orb-2 {
+            width: 350px;
+            height: 350px;
+            background: #7b93c0;
+            bottom: -80px;
+            left: -100px;
+            animation: orbFloat 10s ease-in-out infinite reverse;
+        }
+        @keyframes orbFloat {
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+            33% {
+                transform: translate(30px, -30px);
+            }
+            66% {
+                transform: translate(-20px, 20px);
+            }
+        }
+        .hero .section {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            animation: fadeInUp 1s ease forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(36px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gold-pale);
+            border: 1px solid rgba(184, 134, 45, 0.25);
+            padding: 8px 18px;
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--gold-dark);
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease 0.1s forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .hero-badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--gold);
+            animation: dotGlow 2.5s ease-in-out infinite;
+        }
+        .hero-name {
+            font-family: var(--font-display);
+            font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            line-height: 1.08;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease 0.2s forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .hero-name .gold-text {
+            color: var(--gold);
+            position: relative;
+        }
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 400;
+            animation: fadeInUp 1s ease 0.3s forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            font-family: var(--font-display);
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+        .hero-description {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 480px;
+            margin-bottom: 28px;
+            line-height: 1.75;
+            animation: fadeInUp 1s ease 0.4s forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.5s forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 30px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+            font-size: 0.93rem;
+            letter-spacing: 0.2px;
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary {
+            background: var(--gold);
+            color: #fff;
+            box-shadow: 0 6px 28px rgba(184, 134, 45, 0.35);
+        }
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 36px rgba(184, 134, 45, 0.45);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--text);
+            border: 1.5px solid var(--border);
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold-dark);
+            background: var(--gold-pale);
+            transform: translateY(-3px);
+        }
+        .hero-visual {
+            flex: 0 0 320px;
+            position: relative;
+            animation: fadeInUp 1s ease 0.3s forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .hero-visual-inner {
+            width: 320px;
+            height: 380px;
+            border-radius: var(--radius-xl);
+            background: linear-gradient(160deg, var(--surface-alt), var(--bg-alt));
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9rem;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+        }
+        .hero-visual-inner::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+        }
+        .hero-visual-ring {
+            position: absolute;
+            top: -18px;
+            left: -18px;
+            width: calc(100% + 36px);
+            height: calc(100% + 36px);
+            border-radius: var(--radius-xl);
+            border: 2px dashed var(--gold);
+            opacity: 0.25;
+            animation: spin 25s linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 22px;
+            animation: fadeInUp 1s ease 0.55s forwards;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .hero-stat-value {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: -0.5px;
+        }
+        .hero-stat-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+
+        /* ============ ABOUT ============ */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px;
+            align-items: center;
+        }
+        .about-text p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-size: 0.98rem;
+            line-height: 1.85;
+        }
+        .about-text .lead {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-style: italic;
+            color: var(--text);
+            line-height: 1.5;
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+        .about-card-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 22px;
+        }
+        .about-mini-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            text-align: center;
+            transition: all var(--transition);
+            box-shadow: var(--shadow-xs);
+        }
+        .about-mini-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--gold-light);
+        }
+        .about-mini-icon {
+            font-size: 2rem;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .about-mini-value {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        .about-mini-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+        .about-visual {
+            background: var(--surface-alt);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 380px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            border: 1px solid var(--border);
+        }
+        .about-avatar-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #e8e2d6, #d5cdbf);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            box-shadow: var(--shadow-lg);
+            border: 4px solid #fff;
+        }
+        [data-theme="dark"] .about-avatar-circle {
+            background: linear-gradient(145deg, #2a2822, #1e1c18);
+            border-color: #2a2d35;
+        }
+
+        /* ============ TIMELINE ============ */
+        .timeline {
+            position: relative;
+            padding-left: 44px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 6px;
+            bottom: 6px;
+            width: 1.5px;
+            background: var(--border);
+            border-radius: 1px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            background: var(--surface);
+            border-radius: var(--radius-md);
+            padding: 22px 26px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-xs);
+            transition: all var(--transition);
+        }
+        .timeline-item:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateX(5px);
+            border-left: 3px solid var(--gold);
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -36px;
+            top: 26px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--gold);
+            border: 3px solid var(--bg);
+            box-shadow: 0 0 0 5px var(--gold-pale);
+            z-index: 2;
+        }
+        .timeline-year {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-family: var(--font-body);
+        }
+        .timeline-title {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 3px 0;
+            letter-spacing: -0.2px;
+        }
+        .timeline-desc {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* ============ VALUES ============ */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+        .value-card {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 30px 26px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-xs);
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition);
+            border-radius: 0 0 2px 2px;
+        }
+        .value-card:hover::before {
+            transform: scaleX(1);
+        }
+        .value-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+        }
+        .value-icon {
+            font-size: 2.6rem;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .value-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: -0.2px;
+        }
+        .value-card p {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        /* ============ SERVICES ============ */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+        .service-card {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 30px 24px;
+            text-align: center;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-xs);
+            transition: all var(--transition);
+            position: relative;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--gold-light);
+        }
+        .service-icon-circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: var(--gold-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 16px;
+            transition: all var(--transition);
+        }
+        .service-card:hover .service-icon-circle {
+            background: var(--gold);
+            color: #fff;
+            transform: scale(1.1);
+        }
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: -0.2px;
+        }
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.55;
+        }
+
+        /* ============ CONTACT ============ */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .form-group label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.3px;
+            margin-bottom: 3px;
+            display: block;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid var(--border);
+            background: var(--surface);
+            font-family: var(--font-body);
+            font-size: 0.93rem;
+            transition: all var(--transition-fast);
+            color: var(--text);
+            resize: vertical;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 5px var(--gold-pale);
+        }
+        .form-group textarea {
+            min-height: 130px;
+        }
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .contact-card {
+            background: var(--surface);
+            border-radius: var(--radius-md);
+            padding: 18px 22px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transition: all var(--transition);
+            box-shadow: var(--shadow-xs);
+            cursor: default;
+        }
+        .contact-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateX(5px);
+            border-left: 3px solid var(--gold);
+        }
+        .contact-card-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--gold-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .contact-card h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+        .contact-card span {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+        .social-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 6px;
+        }
+        .social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 1.2rem;
+            transition: all var(--transition-fast);
+            background: var(--surface);
+        }
+        .social-link:hover {
+            background: var(--gold);
+            color: #fff;
+            border-color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            text-align: center;
+            padding: 28px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            background: var(--surface-alt);
+            letter-spacing: 0.3px;
+        }
+        .footer strong {
+            color: var(--text);
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            letter-spacing: -0.2px;
+        }
+
+        /* ============ BACK TO TOP ============ */
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(16px);
+            transition: all var(--transition);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .back-to-top:hover {
+            background: var(--gold-dark);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* ============ TOAST ============ */
+        .toast {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            background: #2d6a4f;
+            color: #fff;
+            padding: 14px 22px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            z-index: 9999;
+            box-shadow: var(--shadow-xl);
+            transform: translateX(130%);
+            transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+        }
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        /* ============ REVEAL ON SCROLL ============ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 1024px) {
+            .hero .section {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .hero-description {
+                margin: 0 auto 24px;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-visual {
+                flex: 0 0 240px;
+            }
+            .hero-visual-inner {
+                width: 240px;
+                height: 300px;
+                font-size: 6rem;
+            }
+            .hero-visual-ring {
+                width: calc(100% + 28px);
+                height: calc(100% + 28px);
+                top: -14px;
+                left: -14px;
+            }
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 75%;
+                max-width: 320px;
+                height: 100vh;
+                background: var(--surface);
+                flex-direction: column;
+                padding: 80px 28px 28px;
+                gap: 4px;
+                transition: right var(--transition);
+                box-shadow: var(--shadow-xl);
+                z-index: 1000;
+                border-left: 1px solid var(--border);
+            }
+            .nav-links.open {
+                right: 0;
+            }
+            .nav-links a {
+                display: block;
+                padding: 12px 16px;
+                font-size: 0.95rem;
+                border-radius: var(--radius-sm);
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero-name {
+                font-size: 2rem;
+            }
+            .hero-visual {
+                flex: 0 0 180px;
+            }
+            .hero-visual-inner {
+                width: 180px;
+                height: 230px;
+                font-size: 4.5rem;
+                border-radius: var(--radius-lg);
+            }
+            .hero-visual-ring {
+                border-radius: var(--radius-lg);
+                width: calc(100% + 22px);
+                height: calc(100% + 22px);
+                top: -11px;
+                left: -11px;
+            }
+            .section {
+                padding: 60px 18px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .about-card-row {
+                grid-template-columns: 1fr;
+            }
+            .timeline {
+                padding-left: 32px;
+            }
+            .timeline-dot {
+                left: -28px;
+            }
+            .timeline::before {
+                left: 11px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-name {
+                font-size: 1.65rem;
+            }
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .hero-stats {
+                gap: 18px;
+            }
+            .hero-visual {
+                flex: 0 0 150px;
+            }
+            .hero-visual-inner {
+                width: 150px;
+                height: 190px;
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <span class="preloader-scales">⚖️</span>
+            <div class="preloader-name">SHIRIN SULTANA</div>
+            <div class="preloader-line"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="nav-brand-dot"></span> Shirin Sultana
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active" data-section="hero">Home</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#education" data-section="education">Education</a></li>
+                <li><a href="#values" data-section="values">Values</a></li>
+                <li><a href="#services" data-section="services">Services</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <div class="hero-wrapper" id="hero">
+        <div class="hero-bg-orb orb-1"></div>
+        <div class="hero-bg-orb orb-2"></div>
+        <section class="section hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span> Called to the Bar — 2026
+                </div>
+                <h1 class="hero-name">
+                    <span class="gold-text">Shirin</span> Sultana
+                </h1>
+                <p class="hero-subtitle">Advocate, Narayanganj Bar Association</p>
+                <p class="hero-description">
+                    A fresh voice in the legal arena. Rooted in integrity, driven by a passion for justice,
+                    and committed to serving the people of Narayanganj with honesty and dedication.
+                    Every client deserves a fearless advocate — and that is exactly who I strive to be.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">📩 Get in Touch</a>
+                    <a href="#services" class="btn btn-outline">⚖️ My Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">2026</div>
+                        <div class="hero-stat-label">Year of Call</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">Narayanganj</div>
+                        <div class="hero-stat-label">Bar Association</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">41</div>
+                        <div class="hero-stat-label">Years of Life Wisdom</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-visual-ring"></div>
+                <div class="hero-visual-inner">👩‍⚖️</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">A Journey Defined by<br>Perseverance</h2>
+            <p class="section-subtitle">From a small-town dreamer to a dedicated legal professional — my path has been anything but ordinary.</p>
+            <div class="gold-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p class="lead">"The law is not just a profession to me — it is a calling I answered with my whole heart, even if the road was long."</p>
+                <p>
+                    I am <strong>Shirin Sultana</strong>, born and raised in Patuakhali, Barisal. Life took me through many twists and turns before I finally
+                    found my true purpose in the legal profession. After completing my SSC in 2003 and HSC in 2005, I embraced the challenges life
+                    placed before me, never losing sight of my dream to one day stand in a courtroom and speak for those who cannot speak for themselves.
+                </p>
+                <p>
+                    In 2018, I made the bold decision to return to academia — completing my <strong>Master's degree</strong> and enrolling in
+                    <strong>LLB</strong> the same year. That decision changed everything. Now, in 2026, I stand before you as a freshly called
+                    Advocate at the <strong>Narayanganj Bar Association</strong>, ready to serve with unwavering integrity.
+                </p>
+                <p>
+                    I may be new to the Bar, but I bring with me the maturity of 41 years, the resilience of a life fully lived, and an
+                    unshakeable moral compass. ☕
+                </p>
+                <div class="about-card-row">
+                    <div class="about-mini-card">
+                        <span class="about-mini-icon">🎓</span>
+                        <div class="about-mini-value">Masters &amp; LLB</div>
+                        <div class="about-mini-label">Completed 2018</div>
+                    </div>
+                    <div class="about-mini-card">
+                        <span class="about-mini-icon">⚖️</span>
+                        <div class="about-mini-value">Advocate</div>
+                        <div class="about-mini-label">Narayanganj Bar · 2026</div>
+                    </div>
+                    <div class="about-mini-card">
+                        <span class="about-mini-icon">📍</span>
+                        <div class="about-mini-value">Narayanganj</div>
+                        <div class="about-mini-label">Dhaka, Bangladesh</div>
+                    </div>
+                    <div class="about-mini-card">
+                        <span class="about-mini-icon">🕊️</span>
+                        <div class="about-mini-value">Integrity First</div>
+                        <div class="about-mini-label">My Guiding Principle</div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION TIMELINE ========== -->
+    <section class="section" id="education">
+        <div class="section-header centered">
+            <span class="section-label">Education & Career Path</span>
+            <h2 class="section-title">The Road to the Bar</h2>
+            <p class="section-subtitle">Every milestone has shaped the advocate I am today.</p>
+            <div class="gold-line"></div>
+        </div>
+        <div class="timeline" style="max-width:700px;margin:0 auto;">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2003</span>
+                <h3 class="timeline-title">SSC — Secondary School Certificate</h3>
+                <p class="timeline-desc">Completed my secondary education with a strong foundation in the humanities.</p>
+            </div>
+            <div class="timeline-item reveal reveal-delay-1">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2005</span>
+                <h3 class="timeline-title">HSC — Higher Secondary Certificate</h3>
+                <p class="timeline-desc">Graduated from higher secondary with distinction, paving the way for future academic pursuits.</p>
+            </div>
+            <div class="timeline-item reveal reveal-delay-2">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2018</span>
+                <h3 class="timeline-title">Master's Degree</h3>
+                <p class="timeline-desc">A transformative year — completed my Master's and enrolled in the LLB programme, embracing the legal field wholeheartedly.</p>
+            </div>
+            <div class="timeline-item reveal reveal-delay-3">
+                <div class="timeline-dot"></div>
+                <span class="timeline-year">2026</span>
+                <h3 class="timeline-title">Called to the Bar — Advocate</h3>
+                <p class="timeline-desc">Officially enrolled as an Advocate at the Narayanganj Bar Association. A new chapter begins — with passion, integrity, and a commitment to justice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VALUES ========== -->
+    <section class="section" id="values">
+        <div class="section-header centered">
+            <span class="section-label">My Core Values</span>
+            <h2 class="section-title">What I Stand For</h2>
+            <p class="section-subtitle">Fresh to the profession, but guided by timeless principles.</p>
+            <div class="gold-line"></div>
+        </div>
+        <div class="values-grid">
+            <div class="value-card reveal">
+                <span class="value-icon">🛡️</span>
+                <h3>Integrity Above All</h3>
+                <p>I believe that a lawyer's most valuable asset is their honesty. I will never compromise the truth for convenience or profit.</p>
+            </div>
+            <div class="value-card reveal reveal-delay-1">
+                <span class="value-icon">🤝</span>
+                <h3>Client-Centred Advocacy</h3>
+                <p>Every client deserves to be heard. I provide personalised attention, clear communication, and relentless dedication to every case I take on.</p>
+            </div>
+            <div class="value-card reveal reveal-delay-2">
+                <span class="value-icon">📚</span>
+                <h3>Continuous Learning</h3>
+                <p>The law evolves every day — and so will I. I am committed to sharpening my knowledge and staying abreast of every legal development.</p>
+            </div>
+            <div class="value-card reveal reveal-delay-3">
+                <span class="value-icon">⚖️</span>
+                <h3>Equal Access to Justice</h3>
+                <p>Justice should not be a privilege. I am determined to make quality legal support accessible to everyone, regardless of their background.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section" id="services">
+        <div class="section-header centered">
+            <span class="section-label">Services</span>
+            <h2 class="section-title">How I Can Help You</h2>
+            <p class="section-subtitle">Comprehensive legal support tailored to your needs.</p>
+            <div class="gold-line"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon-circle">⚖️</div>
+                <h3>Criminal Law</h3>
+                <p>Bail hearings, defence representation, and strategic counsel for all criminal matters at the Narayanganj Court.</p>
+            </div>
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-icon-circle">📋</div>
+                <h3>Civil Litigation</h3>
+                <p>Contract disputes, recovery suits, and civil claims — handled with precision and thorough preparation.</p>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-icon-circle">👨‍👩‍👧‍👦</div>
+                <h3>Family Law</h3>
+                <p>Divorce, maintenance, child custody, and matrimonial disputes — compassionate yet firm representation.</p>
+            </div>
+            <div class="service-card reveal reveal-delay-3">
+                <div class="service-icon-circle">🏠</div>
+                <h3>Property & Land Law</h3>
+                <p>Land disputes, registration, title verification, and property litigation — protecting what is rightfully yours.</p>
+            </div>
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-icon-circle">✍️</div>
+                <h3>Legal Drafting</h3>
+                <p>Contracts, wills, powers of attorney, affidavits, and legal notices — meticulously drafted for absolute clarity.</p>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-icon-circle">🎯</div>
+                <h3>Legal Consultation</h3>
+                <p>One-on-one consultations to understand your legal position, explore options, and plan the best course of action.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="contact">
+        <div class="section-header">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Let's Talk</h2>
+            <p class="section-subtitle">Whether you need legal advice or representation — I am here to listen.</p>
+            <div class="gold-line"></div>
+        </div>
+        <div class="contact-grid">
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Full Name *</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="What would you like to discuss?">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" placeholder="Describe your legal concern or inquiry..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">📤 Send Message</button>
+            </form>
+            <div class="contact-cards reveal reveal-delay-1">
+                <div class="contact-card">
+                    <div class="contact-card-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <spam>shirinsultana33556@gmail.com</spam>.com</span>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <span>01710000000</span>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">📍</div>
+                    <div>
+                        <h4>Address</h4>
+                        <span>Narayanganj, Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+                <div class="social-row">
+                    <a href="#" class="social-link" title="Facebook">📘</a>
+                    <a href="#" class="social-link" title="Phone">📞</a>
+                    <a href="#" class="social-link" title="Email">✉️</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 · <strong>Shirin Sultana</strong> · Advocate, Narayanganj Bar Association</p>
+        <p style="font-size:0.73rem;margin-top:3px;color:var(--text-muted);">Integrity. Dedication. Justice. — All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // ============ DOM REFS ============
+        const preloader = document.getElementById('preloader');
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.getElementById('navLinks');
+        const hamburger = document.getElementById('hamburger');
+        const themeToggle = document.getElementById('themeToggle');
+        const backToTop = document.getElementById('backToTop');
+        const contactForm = document.getElementById('contactForm');
+        const toast = document.getElementById('toast');
+        const htmlDoc = document.documentElement;
+
+        // ============ PRELOADER ============
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 900);
+        });
+        document.body.style.overflow = 'hidden';
+
+        // ============ THEME ============
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        htmlDoc.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const current = htmlDoc.getAttribute('data-theme');
+            const next = current === 'light' ? 'dark' : 'light';
+            htmlDoc.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateThemeIcon(next);
+        });
+
+        function updateThemeIcon(theme) {
+            themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
+        }
+
+        // ============ MOBILE NAV ============
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // ============ SCROLL EFFECTS ============
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            navbar.classList.toggle('scrolled', scrollY > 40);
+            backToTop.classList.toggle('visible', scrollY > 500);
+            updateActiveNav();
+        });
+
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section[id], .hero-wrapper[id]');
+            let current = 'hero';
+            sections.forEach(sec => {
+                const top = sec.offsetTop - 140;
+                if (window.scrollY >= top) {
+                    current = sec.getAttribute('id');
+                }
+            });
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('data-section') === current) {
+                    a.classList.add('active');
+                }
+            });
+        }
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ============ REVEAL ON SCROLL ============
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // Also observe any dynamically added reveal elements
+        document.querySelectorAll('.timeline-item, .value-card, .service-card, .about-mini-card').forEach(el => {
+            if (!el.classList.contains('reveal')) {
+                el.classList.add('reveal');
+                revealObserver.observe(el);
+            }
+        });
+
+        // ============ CONTACT FORM ============
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                showToast('⚠️ Please fill in all required fields.');
+                return;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                showToast('⚠️ Please enter a valid email address.');
+                return;
+            }
+
+            console.log('Contact form submitted:', { name, email, message });
+            showToast('✅ Your message has been sent successfully!');
+            contactForm.reset();
+        });
+
+        // ============ TOAST ============
+        let toastTimer;
+
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3500);
+        }
+
+        // ============ INIT ============
+        updateActiveNav();
+        console.log('%c⚖️ Advocate Shirin Sultana — Portfolio Ready %c| Theme: ' + savedTheme,
+            'font-weight:bold;color:#b8862d;', 'color:#888;');
+        console.log('%c💡 Tip: Click the 🌙 icon to try Dark Mode!', 'color:#888;font-style:italic;');
+    </script>
+</body>
+</html>
